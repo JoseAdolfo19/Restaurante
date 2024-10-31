@@ -12,7 +12,11 @@ if (!$cliente) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $count = actualizarCliente($_GET['id'], $_POST['nombre'], $_POST['correo'], $_POST['telefono'], $_POST['direccion']);
+    $count = actualizarCliente($_GET['id'], 
+    $_POST['nombre'],
+     $_POST['correo'], 
+     $_POST['telefono'], 
+     $_POST['direccion']);
     if ($count > 0) {
         header("Location: index.php?mensaje=cliente actualizado con éxito");
         exit;
