@@ -44,6 +44,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <textarea name="descripcion" required><?php echo $producto['descripcion']; ?></textarea>
         <label>Categoría:</label>
         <input type="text" name="categoria" value="<?php echo $producto['categoria']; ?>" required>
+        <select name="categoria" id="producto_lacteo">
+          <option value="leche">Leche</option>
+          <option value="yogur">Yogur</option>
+          <option value="queso">Queso</option>
+          <option value="mantequilla">Mantequilla</option>
+          <option value="crema">Crema</option>
+          <option value="helado">Helado</option>
+        </select>
         <label>Disponible:</label>
         <input type="checkbox" name="disponible" <?php echo $producto['disponible'] ? 'checked' : ''; ?>>
         <button type="submit">Actualizar Producto</button>

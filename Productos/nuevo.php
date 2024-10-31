@@ -29,7 +29,14 @@ if ($id) {
         <label>Descripción:</label>
         <textarea name="descripcion" required></textarea>
         <label>Categoría:</label>
-        <input type="text" name="categoria" required>
+        <select type = "text" name="categoria" id="producto_lacteo">
+            <option value="leche">Leche</option>
+            <option value="yogur">Yogur</option>
+            <option value="queso">Queso</option>
+            <option value="mantequilla">Mantequilla</option>
+            <option value="crema">Crema</option>
+            <option value="helado">Helado</option>
+        </select>
         <label>Disponible:</label>
         <input type="checkbox" name="disponible">
         <button type="submit">Añadir Producto</button>
