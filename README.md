@@ -1,2 +1,2 @@
 # Restaurante
- Gestion de un restaurant6e de cominda rapida
+ Gestion de un restaurante de comida rapida
